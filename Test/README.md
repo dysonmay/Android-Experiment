@@ -21,6 +21,7 @@
         android:textSize="20sp" />
 </LinearLayout>
 ```
+![LinearLayout](image/LinearLayout.png)
 <h3>tablelayout.xml - 应用程序菜单</h3></br>
 使用TableLayout作为根布局，添加了TextView显示菜单项和快捷键，利用View调整粗细作为菜单栏的分割线。</br>
 使用layout_weight控制列宽比例,利用layout_span实现单元格合并，使用divider属性添加分隔线</br>
@@ -49,6 +50,7 @@
     android:text="Ctrl-o" />
 </TableRow>
 ```
+![TableLayout](image/TableLayout.png)
 <h3>constraintlayout.xml -计算界面</h3></br>
 完全使用约束关系定位，无嵌套布局,其中按钮通过按钮通过chain方式实现等间距排列，使用margin控制按钮间距</br>
 约束按钮示例：
@@ -64,7 +66,7 @@
     app:layout_constraintEnd_toStartOf="@+id/button6"
     app:layout_constraintBottom_toTopOf="@+id/button9" />
 ```
-
+![ConstraintLayout](image/ConstraintLayout.png)
 <h3>constraintlayout2.xml - 太空旅行应用界面</h3></br>
 这是一个模拟太空旅行预订应用的复杂界面，采用垂直方向的LinearLayout作为根布局，内部嵌套了多个布局组件。</br>
 使用了LinearLayout作为垂直方向的根布局。</br>
@@ -82,6 +84,7 @@ LinearLayout (垂直)</br>
 │   ├── ImageView - 银河背景</br>
 │   └── ImageView - 火箭图标</br>
 └── LinearLayout - 底部出发按钮</br>
+![ConstraintLayout2](image/ConstraintLayout2.png)
 
 <h2>实验三概述</h2>
 <h3>ListView动物列表与通知功能</h3></br>
@@ -138,7 +141,7 @@ notificationManager.notify(NOTIFICATION_ID, builder.build());
 布局文件:</br>
 sy3_activity_main.xml：主布局，包含 ListView</br>
 sy3_list_item.xml：列表项布局，包含图片和文字
-
+![sy3-1](image/sy3_1.png)
 <h3>自定义对话框</h3>
 核心代码对话框创建：
 
@@ -156,7 +159,7 @@ View dialogView=inflater.inflate(R.layout.sy3_alter_dialog,null);
 }
 ```
 布局文件 sy3_alter_dialog.xml
-
+![sy3-2](image/sy3_2.png)
 <h3>菜单操作</h3>
 菜单创建：
 
@@ -203,7 +206,7 @@ textView.setTextColor(color);
 相关文件</br>
    sy3_menulayout.xml：包含 Toolbar 和测试文本的布局</br>
 sy3_main_menu.xml：菜单定义文件，包含嵌套子菜单
-
+![sy3-3](image/sy3_3.png)
 <h3>列表视图与ActionMode</h3>
 数据初始化：
 
@@ -248,4 +251,4 @@ mode.setTitle(selectedCount + " 已选择");
 sy3_action_mode_list_item.xml：列表项布局</br>
 
 sy3_action_mode_menu.xml：动作模式菜单</br>
-
+![sy3-4](image/sy3_4.png)
