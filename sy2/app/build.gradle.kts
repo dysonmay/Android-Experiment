@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.sy2"
+    namespace = "com.example.AndroidTest"
     compileSdk = 36
 
     defaultConfig {

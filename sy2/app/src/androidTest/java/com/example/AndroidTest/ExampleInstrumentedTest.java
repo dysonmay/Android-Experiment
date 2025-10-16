@@ -1,4 +1,4 @@
-package com.example.sy2;
+package com.example.AndroidTest;
 
 import android.content.Context;
 
